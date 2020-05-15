@@ -8,16 +8,34 @@ using MySql.Data.MySqlClient;
 using System.Configuration;
 using System.Data;
 
-
 namespace WebApplication1
 {
-    public partial class StronaGlowna : System.Web.UI.Page
+    public partial class CytatyOszczesciu : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!this.IsPostBack)
+            {
+                string constr = ConfigurationManager.ConnectionStrings["default"].ConnectionString;
+                using (MySqlConnection con = new MySqlConnection(constr))
+                {
+                    using (MySqlCommand cmd = new MySqlCommand("SELECT id, cytat, kto FROM cytaty_szczescie"))
+                    {
+                        using (MySqlDataAdapter da = new MySqlDataAdapter())
+                        {
+                            cmd.Connection = con;
+                            da.SelectCommand = cmd;
+                            using (DataTable dt = new DataTable())
+                            {
+                                da.Fill(dt);
+                                GridView4.DataSource = dt;
+                                GridView4.DataBind();
+                            }
+                        }
+                    }
+                }
+            }
         }
-
         protected void ButtonStrona(object sender, EventArgs e)
         {
             Response.Redirect("~/StronaGlowna.aspx");

@@ -11,11 +11,31 @@ using System.Data;
 
 namespace WebApplication1
 {
-    public partial class StronaGlowna : System.Web.UI.Page
+    public partial class Sentencje : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!this.IsPostBack)
+            {
+                string constr = ConfigurationManager.ConnectionStrings["default"].ConnectionString;
+                using (MySqlConnection con = new MySqlConnection(constr))
+                {
+                    using (MySqlCommand cmd = new MySqlCommand("SELECT id, cytat, kto FROM cytaty_sentencje"))
+                    {
+                        using (MySqlDataAdapter da = new MySqlDataAdapter())
+                        {
+                            cmd.Connection = con;
+                            da.SelectCommand = cmd;
+                            using (DataTable dt = new DataTable())
+                            {
+                                da.Fill(dt);
+                                GridView5.DataSource = dt;
+                                GridView5.DataBind();
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         protected void ButtonStrona(object sender, EventArgs e)
@@ -50,5 +70,6 @@ namespace WebApplication1
         {
             Response.Redirect("~/DodajWlasne.aspx");
         }
+
     }
 }

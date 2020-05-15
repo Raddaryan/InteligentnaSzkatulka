@@ -1,86 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StronaGlowna.aspx.cs" Inherits="WebApplication1.StronaGlowna" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CytatyOszczesciu.aspx.cs" Inherits="WebApplication1.CytatyOszczesciu" %>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>
-        Strona Główna
-    </title>
-
+    <title>Cytaty o szczęściu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" />
 
-<style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 800px;
-  position: relative;
-  margin: auto;
-        top: 30px;
-        left: -3px;
-    }
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
+    <style>
 .button:hover
 {
     background: white;
@@ -105,16 +32,17 @@ img {vertical-align: middle;}
     cursor: pointer;
 
 }
-    #form1 {
-        width: 100%;
-        height: 100%;
-    }
+.grid
+{
+    box-shadow: 5px 5px 5px #808080;
+}
 </style>
 
 </head>
-<body style="overflow: auto; top: 2px; left: -10px;">
+<body style="overflow: auto; top: 5px; left: -10px;">
 
-     <form id="form1" runat="server">
+    <form id="form1" runat="server">
+
 <div class="header" style="font-family: Amsterdam;text-shadow: 2px 2px 5px #a94242;">
   <h2 style="height: 77px"><a href = "StronaGlowna.aspx">Inteligentna Szkatułka</a></h2>
 </div>
@@ -135,38 +63,11 @@ img {vertical-align: middle;}
 
 </div>
 
-<div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="slajdy\szkatulka1.png" style="width:100%">
-  
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="slajdy\szkatulka2.png" style="width:100%">
-  
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"></div>
-  <img src="slajdy\szkatulka3.png" style="width:100%">
-  
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+<div class="header" style="text-shadow: 2px 2px 5px #a94242;">
+  <h2 style="height: 77px">Cytaty o szczęściu</h2>
 </div>
  
-
-
-
 <script>
     window.onscroll = function () { myFunction() };
 
@@ -181,33 +82,17 @@ img {vertical-align: middle;}
         }
     }
 </script>
-<script>
-    var slideIndex = 0;
-    showSlides();
+<div style="text-shadow: 5px 5px 5px #808080;">
+        <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False"  Font-Size="Large" BorderStyle="Solid" BorderWidth="3px" HorizontalAlign="Center" Width="100%" CssClass="grid">
+            <Columns>
+                <asp:BoundField DataField="cytat" HeaderText="Cytat" SortExpression="cytat" />
+                <asp:BoundField DataField="kto" HeaderText="Autor" SortExpression="kto" />
+            </Columns>
+            <HeaderStyle BackColor="#FF5050" BorderColor="#333333" BorderStyle="Solid" BorderWidth="3px" Font-Names="Amsterdam" Width="100%" Wrap="True" />
+            <RowStyle BackColor="#F0F0F0" BorderColor="#333333" BorderStyle="None" Font-Names="sans-serif" Font-Size="Large" />
+        </asp:GridView>
+                    </div>
+    </form>
 
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
-    }
-</script>
-
-         </form>
 </body>
 </html>
-
-
-
-
-

@@ -8,15 +8,35 @@ using MySql.Data.MySqlClient;
 using System.Configuration;
 using System.Data;
 
-
 namespace WebApplication1
 {
-    public partial class StronaGlowna : System.Web.UI.Page
+    public partial class CytatyOmilosci : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
+                if (!this.IsPostBack)
+                {
+                    string constr = ConfigurationManager.ConnectionStrings["default"].ConnectionString;
+                    using (MySqlConnection con = new MySqlConnection(constr))
+                    {
+                        using (MySqlCommand cmd = new MySqlCommand("SELECT id, cytat, kto FROM cytaty_milosc"))
+                        {
+                            using (MySqlDataAdapter da = new MySqlDataAdapter())
+                            {
+                                cmd.Connection = con;
+                                da.SelectCommand = cmd;
+                                using (DataTable dt = new DataTable())
+                                {
+                                    da.Fill(dt);
+                                    GridView1.DataSource = dt;
+                                    GridView1.DataBind();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
 
         protected void ButtonStrona(object sender, EventArgs e)
         {
