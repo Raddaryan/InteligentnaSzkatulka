@@ -1,7 +1,7 @@
 # InteligentnaSzkatulka
 ![szkatulka1](https://user-images.githubusercontent.com/59450291/82734275-47f26580-9d1a-11ea-91dd-193f73a7fbe8.jpg)
 # Dokumentacja 
-[dokumentacja](https://marcelinawoziwoda.github.io/InteligentnaSzkatulka/) </br>
+[Dokumentacja](https://marcelinawoziwoda.github.io/InteligentnaSzkatulka/) </br>
 
 # Repozytorium 
 [Repozytorium z plikami](https://github.com/marcelinawoziwoda/InteligentnaSzkatulka/tree/main-app)
