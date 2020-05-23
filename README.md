@@ -1,2 +1,2 @@
 # InteligentnaSzkatulka
-Inteligentna Szkatułka  [dokumentacja](https://marcelinawoziwoda.github.io/InteligentnaSzkatulka/)  [Repozytorium z plikami](https://github.com/marcelinawoziwoda/InteligentnaSzkatulka/tree/main-app)
+Inteligentna Szkatułka <br/> [dokumentacja](https://marcelinawoziwoda.github.io/InteligentnaSzkatulka/)<br/>  [Repozytorium z plikami](https://github.com/marcelinawoziwoda/InteligentnaSzkatulka/tree/main-app)
