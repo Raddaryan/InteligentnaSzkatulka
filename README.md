@@ -21,8 +21,10 @@ Do stworzenia projektu Inteligentnej Szkatułki, niezbędne okazały się kompon
 - przewody żeńsko-męskie  </br>
 - przewody męsko-męskie </br>
 </br>
-Wyżej wymienione elementy odpowiadają za funkcje technologiczne szkatułki, jednakże nasz projekt nie miałby sensu, gdyby składał się jedynie z wspomnianych urządzeń, którego przeznaczenia laik niezrozumie. Głównym założeniem projektu było, to że ma być to szkatułka, tak też powstała drewniana skrzyneczka, stworzona drewnianych desek i zawiasów, w której mieści się cały zestaw Arduino. Przy każdorazowym otwarciu wieczka szkatułki, na ekranie pojawia się inny cytat lub wiadomość własna. Takie zmiany cytatów możliwe są dzięki zastosowaniu fotorezystora, który wyczuwa zmiane oświetlenia, co prowadzi do wygaszenia ekranu, a następnie załadowania kolejnego cytatu z bazy.
+Wyżej wymienione elementy odpowiadają za funkcje technologiczne szkatułki, jednakże nasz projekt nie miałby sensu, gdyby składał się jedynie z wspomnianych urządzeń, którego przeznaczenia laik niezrozumie. Głównym założeniem projektu było, to że ma być to szkatułka, tak też powstała drewniana skrzyneczka, stworzona drewnianych desek i zawiasów, w której mieści się cały zestaw Arduino. Przy każdorazowym otwarciu wieczka szkatułki, na ekranie pojawia się inny cytat lub wiadomość własna. Takie zmiany cytatów możliwe są dzięki zastosowaniu fotorezystora, który wyczuwa zmiane oświetlenia, co prowadzi do wygaszenia ekranu, a następnie załadowania kolejnego cytatu z bazy.</br>
+
 # Dokumentacja 
-[dokumentacja](https://marcelinawoziwoda.github.io/InteligentnaSzkatulka/)
+[dokumentacja](https://marcelinawoziwoda.github.io/InteligentnaSzkatulka/) </br>
+
 # Repozytorium 
 [Repozytorium z plikami](https://github.com/marcelinawoziwoda/InteligentnaSzkatulka/tree/main-app)
