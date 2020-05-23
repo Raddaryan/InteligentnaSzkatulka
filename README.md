@@ -1,7 +1,6 @@
 # InteligentnaSzkatulka
 
- <br/> 
- # Cel projektu:
+# Cel projektu:
 
 Celem projektu było stworzenie Inteligentnej Szkatułki, czyli urządzenia, które wygląda jak szkatułka na biżuterię i taka też rolę odgyrwa, jednakże w jej wnętrzu zamontowany został ekran, na którym przy każdym otwarciu wieczka ukazuje się cytat lub sentencja, a nawet własna wiadomość, którą możemy w prosty sposób napisać poprzez aplikację przeglądarkową dedykowaną szkatułce. 
 <br/>
@@ -24,6 +23,6 @@ Do stworzenia projektu Inteligentnej Szkatułki, niezbędne okazały się kompon
 </br>
 Wyżej wymienione elementy odpowiadają za funkcje technologiczne szkatułki, jednakże nasz projekt nie miałby sensu, gdyby składał się jedynie z wspomnianych urządzeń, którego przeznaczenia laik niezrozumie. Głównym założeniem projektu było, to że ma być to szkatułka, tak też powstała drewniana skrzyneczka, stworzona drewnianych desek i zawiasów, w której mieści się cały zestaw Arduino. Przy każdorazowym otwarciu wieczka szkatułki, na ekranie pojawia się inny cytat lub wiadomość własna. Takie zmiany cytatów możliwe są dzięki zastosowaniu fotorezystora, który wyczuwa zmiane oświetlenia, co prowadzi do wygaszenia ekranu, a następnie załadowania kolejnego cytatu z bazy.
 # Dokumentacja </br>
-[dokumentacja](https://marcelinawoziwoda.github.io/InteligentnaSzkatulka/)</br>
+[dokumentacja](https://marcelinawoziwoda.github.io/InteligentnaSzkatulka/) </br>
 # Repozytorium </br>
 [Repozytorium z plikami](https://github.com/marcelinawoziwoda/InteligentnaSzkatulka/tree/main-app)
