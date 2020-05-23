@@ -1,4 +1,5 @@
 # InteligentnaSzkatulka
+![szkatulka1](https://user-images.githubusercontent.com/59450291/82734275-47f26580-9d1a-11ea-91dd-193f73a7fbe8.jpg)
 
 # Cel projektu:
 
@@ -23,8 +24,26 @@ Do stworzenia projektu Inteligentnej Szkatułki, niezbędne okazały się kompon
 </br>
 Wyżej wymienione elementy odpowiadają za funkcje technologiczne szkatułki, jednakże nasz projekt nie miałby sensu, gdyby składał się jedynie z wspomnianych urządzeń, którego przeznaczenia laik niezrozumie. Głównym założeniem projektu było, to że ma być to szkatułka, tak też powstała drewniana skrzyneczka, stworzona drewnianych desek i zawiasów, w której mieści się cały zestaw Arduino. Przy każdorazowym otwarciu wieczka szkatułki, na ekranie pojawia się inny cytat lub wiadomość własna. Takie zmiany cytatów możliwe są dzięki zastosowaniu fotorezystora, który wyczuwa zmiane oświetlenia, co prowadzi do wygaszenia ekranu, a następnie załadowania kolejnego cytatu z bazy.</br>
 
+# Założenia projektowe
+Głównym założeniem działania Inteligentnej szkatułki jest wyświetlanie na jej ekranie cytatów,
+sentencji oraz przesłanych wiadomości. Aby to było możliwe, jednym z podstawowych kroków było
+stworzenie bazy danych , w której będą przechowywane wszystkie cytaty wraz z przypisanymi autorami.
+Aktualnie w bazie danych znajduje się 50 cytatów oraz sentencji, lecz ta liczba zmieniła się zaraz po tym gdy do aplikacji internetowej
+została dodana możliwość tworzenia własnych wiadomości. Baza danych została stworzona za
+pomoca programu Microsoft SQL Management Studio 18, który jest zintegrowanym srodowiskiem
+do zarzadzania dowolna infrastruktura SQL, a następnie została wyeksportowana do PhpMyAdmin, by była dostępna z poziomu localhost'a.
+Po stworzeniu projektu szkatułki w programie 3DsMax, nadeszła chwila,
+by projekt zamienić na rzeczywisty przedmiot. Tak też powstała szkatułka, stworzona z drewnianych
+deseczek, z zawiasami. Dodatkowo posiada ona drewnianą
+klapkę, pod która mieści się zestaw Arduino. Tak właśnie narodził się pomysł zrobienia drugiego dna, poprzez montaż odpowiednio przyciętej deski
+oraz zawiasów. Nastepnie, jako ze nasza szkatułka musi być zasilana poprzez
+kabel micro USB, nalezało wyciąć otwór na wspomniany zasilacz. Docelowo, nasza szkatułka ma reagować na każde jej otwarcie i wyświetlac każdorazowo inny cytat. </br>
+
 # Dokumentacja 
 [dokumentacja](https://marcelinawoziwoda.github.io/InteligentnaSzkatulka/) </br>
 
 # Repozytorium 
 [Repozytorium z plikami](https://github.com/marcelinawoziwoda/InteligentnaSzkatulka/tree/main-app)
+
+# Załączniki
+[Załączniki](
