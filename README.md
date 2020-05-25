@@ -45,3 +45,5 @@ deseczek, z zawiasami. Dodatkowo posiada ona drewnianą
 klapkę, pod która mieści się zestaw Arduino. Tak właśnie narodził się pomysł zrobienia drugiego dna, poprzez montaż odpowiednio przyciętej deski
 oraz zawiasów. Nastepnie, jako ze nasza szkatułka musi być zasilana poprzez
 kabel micro USB, nalezało wyciąć otwór na wspomniany zasilacz. Docelowo, nasza szkatułka ma reagować na każde jej otwarcie i wyświetlac każdorazowo inny cytat. </br>
+
+# Wszelkie prawa zastrzeżone.
